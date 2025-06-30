@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insurance Page</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+    }
+
+    header, section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .vehicle-section input[type="text"] {
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .vehicle-section .policy-btn {
+      background-color: #0C68A7; /* Updated to heading color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .insurance-types, .policy-options {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .insurance-types button, .policy-options button {
+      background-color: #022B57; /* Updated dark blue */
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .motor-insurance-text {
+      color: #0C68A7; /* Updated heading color */
+      font-size: 32px;
+      margin-top: 30px;
+    }
+
+    .discount-text {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: #0C68A7; /* Updated heading color */
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .feature {
+      width: 30%;
+      min-width: 250px;
+      margin: 20px 0;
+    }
+
+    .feature h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .tools-title {
+      font-size: 28px;
+      color: #0C68A7; /* Updated heading color */
+      margin-bottom: 30px;
+    }
+
+    .tools {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .tool-item {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        width: 90%;
+      }
+    }
+
+    /* Optional: Hover effect for buttons */
+    .insurance-types button:hover,
+    .policy-options button:hover,
+    .vehicle-section .policy-btn:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Vehicle Insurance -->
+  <header class="vehicle-section">
+    <h1>Trusted Naam, Fantastic Kaam!</h1>
+    <input type="text" placeholder="Vehicle No..">
+    <button class="policy-btn">View Policy Price</button>
+
+    <div class="insurance-types">
+      <button>Bike Insurance</button>
+      <button>Car Insurance</button>
+      <button>Commercial Vehicle Insurance</button>
+      <button>Auto Rikshaw Insurance</button>
+    </div>
+
+    <div class="motor-insurance-text">Motor Insurance</div>
+    <div class="discount-text">Upto 75% off on Motor Insurance</div>
+
+    <div class="policy-options">
+      <button>Renew your existing car policy →</button>
+      <button>Insure your Brand New Car →</button>
+    </div>
+  </header>
+
+  <!-- Section 2: Why Choose Us -->
+  <section>
+    <img src="tata-logo.png" alt="Tata AIG Logo" class="logo">
+    <div class="section-title">Why choose us?</div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Super-Simple Claims</h3>
+        <p>Smartphone-enabled self-inspection processes that make you go “That’s it?”</p>
+      </div>
+      <div class="feature">
+        <h3>Loved by Customers</h3>
+        <p>We are trusted by 5 Crore+ customers.</p>
+      </div>
+      <div class="feature">
+        <h3>Lowest price</h3>
+        <p>No hidden charges, same product with low price.</p>
+      </div>
+    </div>
+
+    <div class="tools-title">Tools & Calculators to Simplify Your Life!</div>
+    <div class="tools">
+      <div class="tool-item">Tax-related Calculators</div>
+      <div class="tool-item">Financial Calculators</div>
+      <div class="tool-item">Investment Calculators</div>
+    </div>
+  </section>
+
+</body>
+</html>
